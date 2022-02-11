@@ -433,6 +433,13 @@ li {
 .main-foto--size--l {
 	display: none
 }
+
+@media (min-width: 325px) and (max-width: 767px) {
+	.main-foto--size--s {
+		margin-left: 0;
+	}
+}
+
 @media (min-width: 768px) {
 	.main-foto--size--m {
 		display: inline;
