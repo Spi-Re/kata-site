@@ -78,7 +78,7 @@ li {list-style: none;}
 	margin: 0 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 430px) {
 	.header-menu {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
@@ -154,7 +154,7 @@ li {list-style: none;}
 	margin: 4px 20px 0 4px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 490px) {
 	.repair::before {
 		margin: 4px 20px 4px 20px;
 	}
@@ -170,7 +170,7 @@ li {list-style: none;}
 	display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 490px) {
 	.call, .chat, .profile {
 		display: block;
 	}
@@ -374,12 +374,16 @@ li {list-style: none;}
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
+		-webkit-box-align: start;
+			-ms-flex-align: start;
+				align-items: flex-start;
 	}
 }
 
 @media (min-width: 1120px) {
 	.main-section {
 		margin-top: 12px;
+		align-items: top;
 	}
 }
 
