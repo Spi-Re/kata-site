@@ -567,7 +567,7 @@ summary::-moz-list-bullet {
 .main-section__more-text::before {
 	content: "";
 	position: absolute;
-	background: url(/img/main/spoiler.svg) no-repeat;
+	background: url(../img/main/spoiler.svg) no-repeat;
 	top: 7px;
 	left: 7px;
 	width: 8px;
