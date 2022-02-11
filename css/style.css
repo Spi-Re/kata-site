@@ -40,7 +40,7 @@ li {list-style: none;}
 /* ========================== HEADER ======================= */
 
 .container {
-	max-width: 340px;
+	min-width: 320px;
 	margin: 0 auto;
 	/* border: 1px solid black; */
 	border-bottom: 1px solid #D9FFF5;
@@ -48,7 +48,7 @@ li {list-style: none;}
 
 @media (min-width: 768px) {
 	.container {
-		max-width: 768px;
+		min-width: 768px;
 	}
 }
 
@@ -62,8 +62,6 @@ li {list-style: none;}
 		background-color: #F8F8F8;
 	} 
 }
-
-
 
 /* ============= Позиционирование списка иконок в header ================== */
 
@@ -213,7 +211,7 @@ li {list-style: none;}
 	background-color: #F8F8F8;
 }
 .main-article {
-	margin: 0 16px;
+	margin: 0 0 0 16px;
 }
 
 @media (min-width: 768px) {
@@ -362,6 +360,9 @@ li {list-style: none;}
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 24px;
 }
 @media (min-width: 768px) {
@@ -407,6 +408,7 @@ li {list-style: none;}
 	max-height: 90px;
 	overflow-y: hidden;
 	margin-bottom: 16px;
+	margin-right: 8px;
 	letter-spacing: 0.2px;
 }
 
@@ -470,8 +472,8 @@ li {list-style: none;}
 		border-radius: 5px;
 		margin: 0 0 30px 0;
 		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 50%;
-		        flex: 0 0 50%;
+		    -ms-flex: 0 1 50%;
+		        flex: 0 1 50%;
 		max-height: 208px;
 	}
 	.main-foto--size--s {
@@ -512,6 +514,7 @@ summary::-moz-list-bullet {
 	content: "";
 	list-style-type: none; 
 }
+
 
 .main-section__spoiler {
 	display: inline-block;
@@ -564,10 +567,10 @@ summary::-moz-list-bullet {
 .main-section__more-text::before {
 	content: "";
 	position: absolute;
-	background: url(../img/main/spoiler.svg) no-repeat;
-	top: 6px;
+	background: url(/img/main/spoiler.svg) no-repeat;
+	top: 7px;
 	left: 7px;
 	width: 8px;
-	height: 11px;
+	height: 10px;
 	cursor: pointer;
 }
