@@ -307,6 +307,18 @@ li {list-style: none;}
 	overflow-x: auto;
 }
 
+.main-menu__list::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 24px;
+	height: 100%;
+
+	background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+		background: -o-linear-gradient(right, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+			background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
 .main-menu__list::-webkit-scrollbar {
 	display: none;
   }
@@ -326,6 +338,17 @@ li {list-style: none;}
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
+	}
+	
+	.main-menu__list::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		width: 0px;
+		height: 100%;
+		background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+			background: -o-linear-gradient(right, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+				background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 	}
 }
 
