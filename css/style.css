@@ -43,6 +43,12 @@ li {list-style: none;}
 	background-color: #F2F2F2;
 }
 
+@media (min-width: 200px) and (max-width:1120px) {
+	.header .container {
+		background-color: #FFF;
+	}
+}
+
 .container {
 	min-width: 320px;
 	margin: 0 auto;
