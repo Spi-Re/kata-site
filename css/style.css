@@ -39,6 +39,10 @@ li {list-style: none;}
 
 /* ========================== HEADER ======================= */
 
+.header {
+	background-color: #F2F2F2;
+}
+
 .container {
 	min-width: 320px;
 	margin: 0 auto;
@@ -220,8 +224,9 @@ li {list-style: none;}
 /* ======================= Main Блок========================== */
 
 .main {
-	background-color: #F8F8F8;
+	background-color: #F2F2F2;
 }
+
 .main-article {
 	margin: 0 0 0 16px;
 }
