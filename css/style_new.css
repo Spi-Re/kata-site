@@ -37,7 +37,7 @@ body, li, ul, img, div, a, h1 {margin: 0;padding: 0;}
 a {text-decoration: none;}
 html,body {height: 100%;width: 100%;}
 li {list-style: none;}
-* {box-sizing: border-box;}
+* {-webkit-box-sizing: border-box;box-sizing: border-box;}
 button {
 	padding: 0 0;
 }
@@ -79,8 +79,12 @@ button {
 
 .header-row {
 	background-color: #FFF;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 15px 16px 10px 16px;
 }
 
@@ -94,12 +98,18 @@ button {
 	.header-row {
 		padding: 42px 24px 10px 24px;
 		background-color: #F8F8F8;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
 		display: inline-flex;
-		justify-content: flex-end;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 }
 
 .header-column {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -362,6 +372,8 @@ button {
 
 
 .about-company__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	overflow: auto;
 	scrollbar-width: none;
@@ -375,7 +387,8 @@ button {
 
 @media (min-width: 1120px) {
 	.about-company__list {
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		width: 100%;
 	} 
 }
@@ -386,6 +399,8 @@ button {
 	right: 0;
 	width: 24px;
 	height: 40px;
+	background: -webkit-gradient(linear, right top, left top, color-stop(16.84%, #F8F8F8), to(rgba(248, 248, 248, 0.0001)));
+	background: -o-linear-gradient(right, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 	background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
@@ -442,8 +457,12 @@ button {
 
 @media (min-width: 768px) {
 	.about-company__main-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 		margin-top: 32px;
 	}
 }
@@ -558,8 +577,12 @@ button {
 	padding-bottom: 25px;
 	margin-right: auto;
 	margin-left: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 @media (min-width: 768px) {
